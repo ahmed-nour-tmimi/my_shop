@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,500;1,700&family=Rubik:ital@1&display=swap');
+
+:root {
+   --blue: #3498db;
+   --red: #e74c3c;
+   --orange: #f39c12;
+   --black: #333;
+   --white: #fff;
+   --light-bg: #eee;
+   --box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+   --border: 2px solid var(--black);
+}
+
+*{
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+   font-family: 'Rubik', sans-serif;
+}
+
+body {
+   background-color: #fff;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-top: 100px; /* Ajouté pour un espacement sous l'en-tête */
+}
+
+header{
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 80px;
+   background: rgb(52,57,65);
+   padding: 5px 7%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 10000;
+   border-radius: 0px 0px 10px 10px;
+
+}
+header .navbar a{
+   font-size: 1.2rem;
+   padding: .5rem 1.5rem;
+   color: #fff;
+   border: .1rem solid transparent;
+   transition: 0.2s ease;
+}
+header .navbar a.active,
+header .navbar a:hover{
+   color: #fff;
+   border: .1rem solid #ff914d;
+   border-radius: 4px;
+}
+.logo {
+    height: 100%;
+    max-height: 70px;  
+    width: auto;  
+    margin-right: 20px;  
+}
+
+.cart-container {
+   width: 80%; /* Limite la largeur du panier */
+   margin: 20px auto;
+}
+
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 20px;
+}
+
+thead {
+   background-color: var(--blue);
+   color: #ff914d;
+   text-align: left;
+   font-weight: bold;
+}
+
+th, td {
+   padding: 12px;
+   border: 1px solid rgb(221, 203, 169);
+   text-align: center;
+}
+
+th {
+   background-color: rgb(247, 221, 175);
+}
+
+td {
+   background-color: #fff;
+}
+
+tr:nth-child(even) td {
+   background-color: #f9f9f9;
+}
+
+tr:hover td {
+   background-color: #f1f1f1;
+}
+
+.cart-item img {
+    max-width: 80px; /* Ajustez la taille de l'image du produit */
+    height: auto;
+    border-radius: 5px;
+}
+
+.cart-item-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    flex-grow: 1; /* Permet d'optimiser l'espace */
+}
+
+
+
+.cart-total {
+   margin:2px 0 15px 0;
+   padding: 10px;
+   background-color: #fdb487; /* Couleur d'arrière-plan */
+   border: 1px solid rgb(52,57,65); /* Bordure */
+   border-radius: 5px; /* Coins arrondis */
+   text-align: center; /* Centrer le texte */
+   color: rgb(52,57,65);
+   display: flex; /* Utiliser un conteneur flexible */
+   justify-content: space-between; /* Espacer les éléments */
+   align-items: center; /* Aligner verticalement */
+}
+
+.cart-total h2 {
+    margin: 0; /* Enlever la marge */
+    font-size: 24px; /* Taille de police */
+    color: #333; /* Couleur du texte */
+}
+
+
+.btn, .delete-btn, .option-btn {
+   padding: 10px 20px;
+   font-size: 16px;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.btn {
+   background-color: #f38540;
+   color: var(--white);
+   text-transform: capitalize;
+   text-decoration: none;
+   border: none;
+}
+
+.delete-btn {
+   background-color: var(--red);
+   color: var(--white);
+   text-decoration: none;
+   border: none;
+}
+
+.option-btn {
+   background-color: var(--blue);
+   color: var(--white);
+   border: none;
+   text-transform: capitalize;
+}
+
+button[name="update_cart"], 
+button[name="remove_item"] {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Style spécifique pour le bouton Mettre à jour */
+button[name="update_cart"] {
+    background-color: #3498db; /* Bleu vif */
+}
+
+button[name="update_cart"]:hover {
+    background-color: #2980b9; /* Bleu foncé */
+    transform: scale(1.05); /* Légère mise en avant */
+}
+
+/* Style spécifique pour le bouton Supprimer */
+button[name="remove_item"] {
+    background-color: #e74c3c; /* Rouge vif */
+}
+
+button[name="remove_item"]:hover {
+    background-color: #c0392b; /* Rouge foncé */
+    transform: scale(1.05); /* Légère mise en avant */
+}
+
+/* Style pour une accessibilité accrue */
+button[name="update_cart"]:focus,
+button[name="remove_item"]:focus {
+    outline: 2px solid #f39c12; /* Ajout d'une bordure dorée au focus */
+}
+input[type="number"] {
+   width: 80px; /* Largeur ajustée */
+   padding: 8px 12px; /* Espacement interne */
+   font-size: 16px; /* Taille du texte */
+   font-weight: bold; /* Texte en gras pour un aspect professionnel */
+   color: var(--black); /* Couleur du texte */
+   background-color: var(--white); /* Fond blanc */
+   border: 2px solid var(--light-bg); /* Bordure légère */
+   border-radius: 8px; /* Coins arrondis */
+   box-shadow: var(--box-shadow); /* Ombre pour l'effet d'élévation */
+   transition: all 0.3s ease; /* Transition pour les interactions */
+}
+
+/* Effet au survol */
+input[type="number"]:hover {
+   border-color: var(--blue); /* Bordure bleue au survol */
+   background-color: #f1f8ff; /* Légère teinte bleue */
+}
+
+/* Effet au focus */
+input[type="number"]:focus {
+   border-color: var(--orange); /* Bordure orange au focus */
+   background-color: #fffbe6; /* Fond jaune clair */
+   box-shadow: 0 0 8px var(--orange); /* Ombre avec couleur orange */
+   outline: none; /* Supprime le contour par défaut */
+}
+
+/* Style pour les flèches de réglage (sur certains navigateurs) */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+   -webkit-appearance: none; /* Supprime l'apparence par défaut */
+   margin: 0; /* Supprime les marges */
+}
+
+input[type="number"] {
+   -moz-appearance: textfield; /* Supprime les flèches sur Firefox */
+}
+/* Bouton Facture */
+.btn-facture {
+   display: inline-block;
+   margin: 10px auto;
+   padding: 15px 10px;
+   background-color: #f38540;
+   color: #fff;
+   font-size: 18px;
+   font-weight: bold;
+   border: none;
+   border-radius: 8px;
+   cursor: pointer;
+   text-transform: uppercase;
+   transition: all 0.3s ease;
+   position: relative; /* Fixe le bouton au bas de la page */
+   top: 1px; /* Distance du bas */
+   left: 50%; /* Centré horizontalement */
+   transform: translateX(-50%);
+    /* Le bouton sera au-dessus d'autres éléments */
+}
+
+.btn-facture:hover {
+   background-color: #218838;
+   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.btn-paiement {
+   background-color: #28a745;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.btn-paiement:hover {
+   background-color: #218838;
+}
+
+.btn-facture {
+   background-color: #007bff;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.btn-facture:hover {
+   background-color: #0056b3;
+}
+
+.info-paiement {
+   color: #ff0000;
+   font-size: 1rem;
+   margin-top: 10px;
+}

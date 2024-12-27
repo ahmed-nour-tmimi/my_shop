@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: rgb(52,57,65);
+    padding: 5px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    border-radius: 0px 0px 10px 10px;
+ 
+ }
+ header .navbar a{
+    font-size: 1.2rem;
+    padding: .5rem 1.5rem;
+    color: #fff;
+    border: .1rem solid transparent;
+    transition: 0.2s ease;
+ }
+ header .navbar a.active,
+ header .navbar a:hover{
+    color: #fff;
+    border: .1rem solid #ff914d;
+    border-radius: 4px;
+ }
+ .logo {
+     height: 100%;
+     max-height: 70px;  
+     width: auto;  
+     margin-right: 20px;  
+ }
+
+  .payment-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .payment-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+  }
+
+  .payment-form label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #555;
+  }
+
+  .payment-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+
+  .payment-form input:focus {
+    border-color: #cdb196;
+    outline: none;
+  }
+
+  .payment-form .btn-paiement {
+    width: 100%;
+    padding: 10px;
+    background-color: #cdb196;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  .payment-form .btn-paiement:hover {
+    background-color: #b59779;
+  }
+
+  .payment-form .checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .payment-form .checkbox input {
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  .modal {
+    width: 96%;
+    max-width: 1000px;
+    height: 550px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.3);
+  }
+
+  .modal-info {
+    width: 60%;
+    height: 100%;
+    float: right;
+    position: relative;
+    padding: 20px;
+  }
+
+  .info h2 {
+    font-size: 2.25rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .form-list {
+    margin-top: 1.5rem;
+  }
+
+  .form-list-row {
+    margin: 1rem 0;
+  }
+
+  .form-list-row input {
+    width: 70%;
+    font-size: 1rem;
+    padding: 0.4rem 0;
+    border: none;
+    border-bottom: solid 2px #999;
+    background-color: transparent;
+    transition: border-color 0.3s ease;
+  }
+
+  .form-list-row input:focus {
+    border-color: #cdb196;
+  }
+
+  .form-list-row label {
+    font-size: 1rem;
+  }
+  h1 {
+    font-family: 'Poppins', Arial, sans-serif;  /* Police Poppins */
+    font-size: 2.5rem;  /* Taille de la police */
+    font-weight: 600;  /* Poids de la police */
+    text-align: center;  /* Centrer le texte */
+    color: #333;  /* Couleur du texte */
+    margin-top: 20px;  /* Espace au-dessus du titre */
+    margin-bottom: 30px;  /* Espace en dessous du titre */
+  }
+  

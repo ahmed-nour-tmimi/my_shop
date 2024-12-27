@@ -1,0 +1,179 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    min-height: 100vh;
+}
+
+/* Header avec les logos */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background: #fff;
+   
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo img {
+    height: 90px;
+    max-height: 100px;
+    width: auto;
+}
+
+.left-logo {
+    margin-right: 20px;
+}
+
+.right-logo {
+    margin-left: auto;
+}
+
+/* Conteneur principal */
+.container {
+    display: flex;
+    background: #fff;
+    box-shadow: 20px 20px 20px  rgba(233, 156, 84, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 900px;
+    margin-top: 100px;
+}
+
+/* Image de gauche */
+.image-container {
+    flex: 1;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.image-container img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    
+}
+
+/* Formulaire */
+.form-container {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgb(255, 254, 249)
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: #555;
+}
+
+.form-options a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-options a:hover {
+    text-decoration: underline;
+}
+
+.form-actions {
+    margin-top: 20px;
+}
+
+.form-actions button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-primary {
+    background: #007bff;
+}
+
+.btn-secondary {
+    background: #6c757d;
+}
+
+.form-footer {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+}
+
+.form-footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+/* Style pour le titre Admin */
+.admin-title {
+    font-size: 28px; /* Taille plus grande */
+    font-weight: bold; /* Texte en gras */
+    text-align: center; /* Centré horizontalement */
+    color: #333; /* Couleur principale */
+    margin-bottom: 10px; /* Espacement avec le reste */
+}
+/* Styles pour les logos en bas de la page */
+.footer-logos {
+    position: fixed;
+    bottom: 10px; /* Distance du bas de la page */
+    width: 100%; /* Occupe toute la largeur */
+    display: flex;
+    justify-content: space-between; /* Place un logo à gauche et l'autre à droite */
+    align-items: center;
+    padding: 0 20px; /* Espacement intérieur */
+}
+
+.footer-logos .logo img {
+    height: 90px; /* Taille des images */
+    width: auto;
+    cursor: pointer;
+}

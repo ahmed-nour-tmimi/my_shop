@@ -1,0 +1,142 @@
+/* Reset de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Styles généraux */
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #ffffff; /* Couleur de fond légère */
+}
+
+/* En-tête */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    background: #fff;
+    
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Bouton Retour à Admin */
+.back-button {
+    position: absolute;
+    top: 140px;
+    left: 40px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    background-color: #4CAF50;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #45a049;
+    text-decoration: none;
+    color: white;
+}
+
+.back-button i {
+    margin-right: 5px;
+}
+
+/* Logos dans l'en-tête */
+.logo img {
+    height: 90px;
+    max-height: 100px;
+    width: auto;
+}
+
+.left-logo {
+    margin-right: 20px;
+}
+
+.right-logo {
+    margin-left: auto;
+}
+
+/* Formulaire */
+h1 {
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-container {
+    max-width: 600px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto; /* Centrer le formulaire */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #884318;
+}
+
+/* Pied de page */
+.footer-logos {
+    position: fixed;
+    bottom: 10px; /* Distance du bas de la page */
+    width: 100%; /* Occupe toute la largeur */
+    display: flex;
+    justify-content: space-between; /* Place un logo à gauche et l'autre à droite */
+    align-items: center;
+    padding: 0 20px; /* Espacement intérieur */
+}
+
+.footer-logos .logo img {
+    height: 90px; /* Taille des images */
+    width: auto;
+    cursor: pointer;
+}

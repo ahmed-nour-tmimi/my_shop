@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+}
+
+/* Styles généraux */
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: #ffffff; /* Couleur de fond légère */
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+/* Table */
+table {
+    position: relative;
+    top: 50px;
+    width: 80%;
+    left: 200px;
+    margin: 30px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* En-tête du tableau */
+th {
+    background-color: #ff914d;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+th i {
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+
+/* Celles du tableau */
+td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Rendre les lignes alternées légèrement différentes */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+ 
+
+ 
+
+.button i {
+    margin-right: 8px;
+}
+
+ .fas {
+    font-size: 1.2rem;
+}
+
+ 
+ 
+ 
+  
+ 

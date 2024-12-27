@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,500;1,700&family=Rubik:ital@1&display=swap');
+
+*{
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Rubik', sans-serif;
+}
+
+body {
+   
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 90px;
+  background: rgb(52,57,65);
+  padding: 5px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 10000;
+  border-radius: 0px 0px 10px 10px;
+
+}
+
+.title {
+  font-size: 19px;
+  font-weight: 600;
+  color: #ff914d;
+  margin-left: 10px;
+}
+
+ 
+.main-container {
+  display: flex;
+  width: 100vw;
+  position: relative;
+  top: 70px;
+  z-index: 1;
+  
+}
+ 
+
+.main {
+  height: calc(100vh - 70px);
+  width: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding: 40px 30px 30px 30px;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background-image: 
+        linear-gradient(to bottom, rgb(0, 0, 85), rgb(0, 0, 50));
+}
+.main::-webkit-scrollbar {
+  width: 5px;
+}
+.main::-webkit-scrollbar-track {
+  background-color: #9e9e9eb2;
+}
+
+.box-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.nav {
+  min-height: 91vh;
+  width: 200px;
+  background-color: rgb(230, 230, 230);
+
+  position: absolute;
+  top: 0px;
+  left: 00;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 30px 10px 20px 40px;
+}
+.navcontainer {
+  height: calc(100vh - 70px);
+  width: 250px;
+  position: relative;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  transition: all 0.5s ease-in-out;
+  
+}
+.navcontainer::-webkit-scrollbar {
+  display: none;
+}
+.navclose {
+  width: 80px;
+}
+.nav-option {
+  width: 250px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  gap: 20px;
+  position: relative; /* Nécessaire pour positionner le sous-menu */
+  right: 10px;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav-option:hover {
+  background-color: #ffc7a4;
+  cursor: pointer;
+}
+
+.option1{
+  width: 220px;
+  height: 60px;
+  margin-top: 10px;
+  background-color: #ffc7a4;
+  display: flex;
+  align-items: center;
+  padding: 0 30px 0 20px;
+  gap: 20px;
+  transition: all 0.1s ease-in-out;
+}
+.nav-img {
+  height: 30px;
+}
+
+.nav-upper-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+ 
+
+ 
+
+.nav-option h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.logo img {
+  height: 80px;
+  max-height: 100px;
+  width: auto;
+   
+}
+.right-logo {
+  margin-left: auto;
+  margin-top: 15px;
+}
+ 
+.title i {
+  color: #075e04;  
+  margin-right: 5px;  
+  font-size: 19;  
+}
+ 
+ .nav-option .submenu {
+  display: none; /* Cache le sous-menu par défaut */
+  position: absolute;
+  top: 100%; /* Affiche le sous-menu juste en dessous de l'élément parent */
+  left: 40px;
+  background-color: #333;
+  width: 200px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Affiche le sous-menu quand l'élément parent est survolé */
+.nav-option:hover .submenu {
+  display: block;
+}
+
+/* Style des éléments de la liste dans le sous-menu */
+.nav-option .submenu li {
+  border-bottom: 1px solid #444; /* Ligne de séparation entre les éléments */
+}
+
+.nav-option .submenu li a {
+  padding: 12px 20px;
+  color: white;
+  display: block;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Changer la couleur de fond au survol des liens */
+.nav-option .submenu li a:hover {
+  background-color: #555;
+}
+
+/* Pour l'icône et le texte "Produits" */
+.nav-option h3 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.nav-option i {
+  font-size: 20px;
+  margin-right: 15px;
+  color: #286311;
+}
+
+/* Assurez-vous que l'icône du menu déroulant pointe vers le bas */
+.nav-option h3 i {
+  font-size: 19px;
+  margin-left: 10px;
+}

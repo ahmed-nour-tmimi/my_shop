@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,500;1,700&family=Rubik:ital@1&display=swap');
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
+ }
+ body {
+    margin: 0; /* Suppression des marges */
+    height: 100vh; /* Hauteur de la fenêtre */
+    color: #999;
+    font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+    text-align: center;
+    
+    overflow: hidden; /* Empêche le défilement */
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    background: rgb(52,57,65);
+    padding: 5px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10000;
+    border-radius: 0px 0px 10px 10px;
+ 
+ }
+ header .navbar a{
+    font-size: 1.2rem;
+    padding: .5rem 1.5rem;
+    color: #fff;
+    border: .1rem solid transparent;
+    transition: 0.2s ease;
+ }
+ header .navbar a.active,
+ header .navbar a:hover{
+    color: #fff;
+    border: .1rem solid #ff914d;
+    border-radius: 4px;
+ }
+ .logo {
+     height: 100%;
+     max-height: 70px;  
+     width: auto;  
+     margin-right: 20px;  
+ }
+/* Conteneur principal pour aligner le contenu */
+.content {
+    display: flex;
+    flex-wrap: wrap; /* Permet l'ajustement sur petits écrans */
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto; /* Centrer le conteneur sur la page */
+    margin-top: 100px; /* Ajuste l'espacement par rapport au header */
+    gap: 30px; /* Espacement entre les colonnes */
+}
+
+/* Colonne gauche : Paragraphe */
+.left {
+    flex: 1; /* S'adapte à l'espace disponible */
+    min-width: 300px;
+}
+
+.location-info {
+    font-size: 20px;
+    line-height: 1.8;
+    color: #444; /* Texte plus sombre pour une meilleure lisibilité */
+    text-align: justify; /* Alignement justifié pour un style formel */
+    background: #ffffff; /* Fond blanc pour un contraste propre */
+    border-left: 4px solid #ff914d; /* Accent visuel */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre douce */
+    transition: transform 0.3s ease; /* Animation au survol */
+}
+
+.location-info:hover {
+    transform: scale(1.03); /* Légère mise en avant au survol */
+}
+
+/* Colonne droite : Google Maps */
+.right {
+    flex: 2; /* Occupe plus de place */
+    min-width: 600px; /* Largeur minimum pour un bon affichage */
+    border-radius: 8px; /* Angles arrondis */
+    overflow: hidden; /* Cache les débordements de contenu */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Ombre cohérente */
+}
+
+iframe {
+    width: 100%;
+    height: 450px;
+    border: none; /* Supprime les bordures */
+    filter: grayscale(20%) contrast(1.1); /* Effet moderne sur la carte */
+}
+
+/* Style général pour s'harmoniser */
+body {
+    background: #f5f5f5; /* Fond clair pour une esthétique moderne */
+    color: #333; /* Texte sombre */
+    font-family: 'Roboto', sans-serif; /* Typographie élégante et lisible */
+}

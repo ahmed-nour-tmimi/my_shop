@@ -1,0 +1,108 @@
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 30px;
+    font-size: 2rem;
+}
+
+/* Table */
+table {
+    position: relative;
+    top: 50px;
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* En-tête du tableau */
+th {
+    background-color: #ff914d;
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 1rem;
+}
+
+th i {
+    margin-left: 8px;
+    font-size: 1.2rem;
+}
+
+/* Celles du tableau */
+td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 0.95rem;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Rendre les lignes alternées légèrement différentes */
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Style du bouton retour */
+ 
+
+.button i {
+    margin-right: 8px;
+}
+
+/* Style pour les icônes Font Awesome */
+.fas {
+    font-size: 1.2rem;
+}
+
+/* Responsive */
+ 
+.stats-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 80%;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 22%;
+}
+
+.stat-card h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.stat-card p {
+    font-size: 1.5rem;
+    color: #ff914d;
+    font-weight: bold;
+}
+
+.stat-card small {
+    display: block;
+    font-size: 0.9rem;
+    color: #555;
+}
+ 

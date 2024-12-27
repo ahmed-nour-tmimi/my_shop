@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;1,100;1,500;1,700&family=Rubik:ital@1&display=swap');
+
+:root {
+   --blue: #3498db;
+   --red: #e74c3c;
+   --orange: #f39c12;
+   --black: #333;
+   --white: #fff;
+   --light-bg: #eee;
+   --box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+   --border: 2px solid var(--black);
+}
+
+*{
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border: none;
+   text-decoration: none;
+   box-sizing: border-box;
+   font-family: 'Roboto', sans-serif;
+   font-family: 'Rubik', sans-serif;
+}
+
+body {
+   background-color: var(--light-bg);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   height: 80px;
+   background: rgb(52, 57, 65);
+   padding: 5px 7%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   z-index: 10000;
+   border-radius: 0px 0px 10px 10px;
+}
+.logo {
+   height: 100%;
+   max-height: 70px;  
+   width: auto;  
+   margin-right: 20px;  
+}
+header .navbar a {
+   font-size: 1.2rem;
+   padding: .5rem 1.5rem;
+   color: #fff;
+   border: .1rem solid transparent;
+   transition: 0.2s ease;
+}
+
+header .navbar a.active,
+header .navbar a:hover {
+   color: #fff;
+   border: .1rem solid #ff914d;
+   border-radius: 4px;
+}
+
+/* Main container */
+.main-container {
+   display: flex;
+   flex-direction: row-reverse; /* Affiche les boutons à droite */
+   justify-content: space-between;
+   width: 100%;
+   margin-top: 120px; /* Pour éviter que l'en-tête couvre le contenu */
+}
+
+.product-display {
+   background: var(--white);
+   padding: 20px;
+   border-radius: var(--border-radius);
+   box-shadow: var(--box-shadow);
+   width: 70%; /* Les produits occupent 70% de l'écran */
+   margin-left: 20px;
+}
+
+.product-display h2 {
+   margin-bottom: 15px;
+   color: var(--black);
+   font-weight: 600;
+}
+
+/* Section des boutons de catégorie */
+.category-buttons {
+   background: var(--white);
+   padding: 20px;
+   border-radius: var(--border-radius);
+   box-shadow: var(--box-shadow);
+   width: 250px; /* Largeur des boutons de catégorie */
+   height: auto;
+}
+
+.category-buttons h2 {
+   margin-bottom: 15px;
+   color: var(--black);
+   font-weight: 600;
+}
+
+.category-buttons button {
+   margin: 10px 0;
+   background: rgb(52, 57, 65);
+   color: var(--white);
+   padding: 10px;
+   font-size: 1rem;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   transition: background-color 0.3s;
+   width: 100%;
+}
+
+.category-buttons button:hover {
+   background-color: #ff914d;
+   transform: scale(1.05);
+}
+
+/* Liste des produits */
+#product-list {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 20px; /* Espacement plus grand entre les produits */
+   justify-content: flex-start;
+   border-radius: 5px;
+}
+
+.product-box {
+   background: #ffffff;
+   border: 1px solid rgb(52, 57, 65);
+   border-radius: 40px;
+   margin: 10px 0;
+   padding: 20px; /* Plus de padding pour agrandir le produit */
+   text-align: center;
+   border-radius: var(--border-radius);
+   box-shadow: var(--box-shadow);
+   transition: transform 0.3s;
+   width: 220px; /* Largeur augmentée pour les produits */
+   height: auto;
+}
+
+.product-box:hover {
+   transform: scale(1.05);
+}
+
+.product-box img {
+   width: 100%;
+   height: auto;
+   border-radius: var(--border-radius);
+}
+
+.product-name {
+   font-size: 1.2em; /* Taille du texte augmentée */
+   margin: 10px 0;
+   color: var(--black);
+}
+
+.product-price {
+   font-size: 1.1em;
+   color: var(--blue);
+   font-weight: 500;
+}
